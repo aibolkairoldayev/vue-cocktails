@@ -1,0 +1,11 @@
+<script setup>
+import AppLayout from "../components/AppLayout.vue";
+</script>
+
+<template>
+  <AppLayout imgUrl="/src/assets/img/bg-1jpg" />
+</template>
+
+<style lang="sass" scoped>
+@import '../assets/styles/main'
+</style>
