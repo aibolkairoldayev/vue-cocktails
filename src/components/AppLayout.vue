@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
   <div class="root">
-    <div :style="`background-img : url(${imgUrl})`" class="img"></div>
+    <div :style="`background-image : url(${imgUrl})`" class="img"></div>
     <div class="main">
       <el-button class="btn">Get random cocktail</el-button>
       <slot></slot>
@@ -21,34 +21,34 @@ const props = defineProps({
 @import '../assets/styles/main'
 
 .root
-    display: flex
-    min-height: 100vh
-    background: $background
+  display: flex
+  min-height: 100vh
+  background: $background
 
 .img
-    width: 50%
-    background-repeat: no-repeat
-    background-position: 50% 50%
-    background-size: cover
+  width: 50%
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  background-size: cover
 
 .main
-    width: 50%
-    position: relative
-    padding: 32px 40px
+  width: 50%
+  position: relative
+  padding: 32px 40px
 
 .btn
-    position: absolute
-    top: 32px
-    right: 40px
-    background-color: $accent
-    border: $accent
-    color: $text
-    font-size: 16px
-    line-height: 1.4
-    font-family: "Railway", "Arial", sans-serif
+  position: absolute
+  top: 32px
+  right: 40px
+  background-color: $accent
+  border: $accent
+  color: $text
+  font-size: 16px
+  line-height: 1.4
+  font-family: "Railway", "Arial", sans-serif
 
-    &:hover,
-    &:active
-        background-color: darken($accent, 10%)
-        border: darken($accent, 10%)
+  &:hover,
+  &:active
+    background-color: darken($accent, 10%)
+    border: darken($accent, 10%)
 </style>
